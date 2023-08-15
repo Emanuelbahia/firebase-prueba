@@ -1,0 +1,35 @@
+.div-user{
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px #80808073 solid;
+    margin-bottom: 2vw;
+}
+.link-create{
+    margin-bottom: 2vw;
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 0.5vw 2vw;
+    background: #2a9cab;
+    color: #eeeeee;
+}
+.button-delete{
+    background: red;
+    padding: 1vw;
+    margin: 1vw 0;
+    color: #323232;
+}
+.button-edit{
+    margin-top: 3vw;
+    background: #07b9a9;
+    color: #323232;
+}
+h4 {
+    margin-bottom: 0;
+}
+h3 {
+    margin: 0;
+}
