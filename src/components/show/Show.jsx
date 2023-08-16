@@ -1,11 +1,13 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { collection, getDocs,/*  getDoc, */ deleteDoc, doc } from "firebase/firestore";
-import  db  from "../../firebaseConfig/firebase.js";
+import { db } from "../../firebaseConfig/firebase.js";
+//import { useAuth } from "../../context/AuthContext.jsx";
 import "./show.css";
 
 const Show = () => {
 
+    /* const auth = useAuth(); */
     const [users, setUsers] = useState([]);
 
     //referenciamos la base de datos. 
@@ -32,9 +34,14 @@ const Show = () => {
         getUsers();
     }, [])
 
+    /* const google = (e) => {
+        e.preventDefault();
+        auth.loginWithGoogle();
+    } */
 
   return (
     <>
+    {/* <button onClick={google}>google</button> */}
     <Link to="create" className="link-create">crear usuario</Link>
     <div>
         {

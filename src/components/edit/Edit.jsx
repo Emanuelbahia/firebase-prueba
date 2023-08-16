@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 import { updateDoc, doc, getDoc } from "firebase/firestore";
-import  db  from "../../firebaseConfig/firebase.js";
+import { db } from "../../firebaseConfig/firebase.js";
 import "./edit.css";
 
 const Edit = () => {

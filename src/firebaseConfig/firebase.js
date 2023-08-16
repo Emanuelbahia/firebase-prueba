@@ -1,5 +1,7 @@
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "@firebase/firestore";
+//authentication
+import { getAuth } from "firebase/auth";
 
 //todos los parametros de la configuracion en formato json (clave - valor)
 const firebaseConfig = {
@@ -14,7 +16,7 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 
 //conexion a la base de datos
+export const db = getFirestore(app);
 
-const db = getFirestore(app);
-
-export default db;
+//para la autenticacion
+export const auth = getAuth(app);
